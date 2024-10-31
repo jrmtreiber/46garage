@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: inter;
+}
+header {
+  position: relative;
+  display: flex;
+  z-index: 1000;
+}
+/*  */
+
+.cabecalho_46garage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px yellow;
+
+  .logo_cabecalho {
+    width: 150px;
+    height: 75px;
+    cursor: pointer;
+  }
+
+  .ul_cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 2rem;
+  }
+
+  .li_cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: solid 1px yellow;
+    transition: all 0.2s;
+    border-radius: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .links {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .li_cabecalho:hover {
+    color: orange;
+    border: solid 1px orange;
+  }
+}
+
+.videos {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 5px 20px yellow;
+  justify-content: center;
+  align-items: center;
+}
+.videos video {
+  width: 16.67%;
+}
+.videos video {
+  filter: blur(3px) brightness(0.5);
+}
+.letras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  /* box-shadow: 0 0 15px white; */
+  text-shadow: 0 0 15px yellow;
+  box-shadow: inset 0 0 15px white;
+  /* box-shadow: inset 0 0 50px yellow;    */
+  position: absolute;
+  filter: none;
+  z-index: 2;
+  flex-grow: 1;
+  /* width: 16.67%; */
+  padding: 20px;
+  h1 {
+    /* width: 16.67%; */
+    font-size: x-large;
+    color: white;
+    font-family: Inter;
+  }
+}
+.titulo {
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 0.5rem;
+  height: 60px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.baixo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 1.8rem; */
+}
+.conteiner_servicos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px;
+  width: 40%;
+  padding: 0.5rem;
+  background-color: rgba(255, 238, 0, 0.1);
+  margin: 20px;
+  gap: 1.5rem;
+  a {
+    background-color: rgba(165, 165, 2, 0.63);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    transition: all 0.5s;
+  }
+  img {
+    border-radius: 10px;
+  }
+  a:hover {
+    transform: scale(1.1);
+  }
+  a:active {
+    transform: scale(0.9);
+  }
+  .texto_servico {
+    color: rgb(168, 168, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin: 0;
+    /* margin-left: 4rem; */
+    font-size: 25px;
+  }
+  .definicao {
+    /* padding: 2rem; */
+    /* text-wrap: nowrap; */
+    font-size: 20px;
+  }
+}
+
+.footer_46garage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+  box-shadow: 10px 0 15px yellow;
+  background-color: black;
+
+  .conteiner_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .conteiner_footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .logo_footer {
+    width: 60px;
+    height: 32.5px;
+    cursor: pointer;
+  }
+
+  .text1,
+  .sobre-link {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: yellow;
+    text-align: center;
+  }
+
+  .text2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: yellow;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .text2:hover {
+    color: orange;
+  }
+
+  .sobre-link {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .creditos {
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .creditos:hover {
+    color: orange;
+  }
+
+  .links {
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1300px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .cabecalho_46garage {
+    max-width: 100%;
+    max-height: 60px;
+    gap: 2rem;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+    }
+    .ul_cabecalho {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      gap: 2rem;
+    }
+    .logo_cabecalho {
+      max-width: 75%;
+      max-height: 35px;
+    }
+
+    .li_cabecalho {
+      max-width: 100%;
+      max-height: 35px;
+    }
+    .links {
+      width: 70px;
+      height: 30px;
+      text-decoration: none;
+    }
+    .li_cabecalho:hover {
+      color: rgb(196, 160, 0);
+      border: solid 1px rgb(196, 160, 0);
+    }
+  }
+  .videos {
+    position: relative;
+    z-index: 1;
+    isolation: isolate;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 20px yellow;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* height: 30vh; */
+  }
+  .videos video {
+    width: 35%;
+    border-radius: 10px;
+    filter: blur(2px) brightness(0.5);
+  }
+  .letras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    /* box-shadow: 0 0 15px white; */
+    text-shadow: 0 0 15px yellow;
+    box-shadow: inset 0 0 15px white;
+    /* box-shadow: inset 0 0 50px yellow;    */
+    position: absolute;
+    filter: none;
+    z-index: 2;
+    /* flex-grow: 1; */
+    width: 50%;
+    padding: 10px;
+    img {
+      width: 80%;
+      height: 30%;
+    }
+    h1 {
+      /* width: 16.67%; */
+      font-size: large;
+      color: white;
+      font-family: Inter;
+      text-wrap: nowrap;
+    }
+  }
+  .titulo {
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0.5rem 0 0.5rem; */
+    height: 60px;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .baixo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 1.8rem; */
+  }
+  .conteiner_servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 238, 0, 0.1);
+    margin: 1.5rem;
+    gap: 1.5rem;
+    a {
+      background-color: rgba(165, 165, 2, 0.63);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0;
+      transition: all 0.5s;
+    }
+    img {
+      border-radius: 10px;
+    }
+    a:hover {
+      transform: scale(1.1);
+    }
+    a:active {
+      transform: scale(0.9);
+    }
+    .texto_servico {
+      color: rgb(168, 168, 0);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin: 0;
+      /* margin-left: 4rem; */
+      font-size: 20px;
+    }
+    .definicao {
+      /* padding: 2rem; */
+      /* text-wrap: nowrap; */
+      font-size: 15px;
+    }
+  }
+
+  .conteiner_footer {
+    gap: 6rem;
+  }
+
+  .text1,
+  .text2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: yellow;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .sobre-link .text2 {
+    text-decoration: underline;
+  }
+
+  .creditos {
+    display: none;
+  }
+}
