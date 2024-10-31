@@ -6,11 +6,13 @@ body {
   background-color: black;
   font-family: inter;
 }
+
 header {
   position: relative;
   display: flex;
   z-index: 1000;
 }
+
 /*  */
 
 .cabecalho_46garage {
@@ -72,12 +74,15 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .videos video {
   width: 16.67%;
 }
+
 .videos video {
   filter: blur(3px) brightness(0.5);
 }
+
 .letras {
   display: flex;
   justify-content: center;
@@ -95,6 +100,7 @@ header {
   flex-grow: 1;
   /* width: 16.67%; */
   padding: 20px;
+
   h1 {
     /* width: 16.67%; */
     font-size: x-large;
@@ -102,6 +108,7 @@ header {
     font-family: Inter;
   }
 }
+
 .titulo {
   color: yellow;
   display: flex;
@@ -113,12 +120,14 @@ header {
   font-weight: bold;
   font-size: 2.5rem;
 }
+
 .baixo {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   /* gap: 1.8rem; */
 }
+
 .conteiner_servicos {
   display: flex;
   justify-content: space-between;
@@ -129,6 +138,7 @@ header {
   background-color: rgba(255, 238, 0, 0.1);
   margin: 20px;
   gap: 1.5rem;
+
   a {
     background-color: rgba(165, 165, 2, 0.63);
     color: white;
@@ -141,15 +151,19 @@ header {
     margin: 0;
     transition: all 0.5s;
   }
+
   img {
     border-radius: 10px;
   }
+
   a:hover {
     transform: scale(1.1);
   }
+
   a:active {
     transform: scale(0.9);
   }
+
   .texto_servico {
     color: rgb(168, 168, 0);
     width: 100%;
@@ -162,6 +176,7 @@ header {
     /* margin-left: 4rem; */
     font-size: 25px;
   }
+
   .definicao {
     /* padding: 2rem; */
     /* text-wrap: nowrap; */
@@ -251,21 +266,25 @@ header {
     padding: 0;
     box-sizing: border-box;
   }
+
   html,
   body {
     width: 100%;
     overflow-x: hidden;
   }
+
   .cabecalho_46garage {
     max-width: 100%;
     max-height: 60px;
     gap: 2rem;
+
     a {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 90px;
     }
+
     .ul_cabecalho {
       display: flex;
       justify-content: center;
@@ -273,6 +292,7 @@ header {
       text-decoration: none;
       gap: 2rem;
     }
+
     .logo_cabecalho {
       max-width: 75%;
       max-height: 35px;
@@ -282,16 +302,19 @@ header {
       max-width: 100%;
       max-height: 35px;
     }
+
     .links {
       width: 70px;
       height: 30px;
       text-decoration: none;
     }
+
     .li_cabecalho:hover {
       color: rgb(196, 160, 0);
       border: solid 1px rgb(196, 160, 0);
     }
   }
+
   .videos {
     position: relative;
     z-index: 1;
@@ -304,11 +327,13 @@ header {
     border-radius: 10px;
     /* height: 30vh; */
   }
+
   .videos video {
     width: 35%;
     border-radius: 10px;
     filter: blur(2px) brightness(0.5);
   }
+
   .letras {
     display: flex;
     justify-content: center;
@@ -326,10 +351,12 @@ header {
     /* flex-grow: 1; */
     width: 50%;
     padding: 10px;
+
     img {
       width: 80%;
       height: 30%;
     }
+
     h1 {
       /* width: 16.67%; */
       font-size: large;
@@ -338,6 +365,7 @@ header {
       text-wrap: nowrap;
     }
   }
+
   .titulo {
     color: yellow;
     display: flex;
@@ -349,12 +377,14 @@ header {
     font-weight: bold;
     font-size: 2rem;
   }
+
   .baixo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     /* gap: 1.8rem; */
   }
+
   .conteiner_servicos {
     display: flex;
     justify-content: space-between;
@@ -366,6 +396,7 @@ header {
     background-color: rgba(255, 238, 0, 0.1);
     margin: 1.5rem;
     gap: 1.5rem;
+
     a {
       background-color: rgba(165, 165, 2, 0.63);
       color: white;
@@ -378,15 +409,19 @@ header {
       margin: 0;
       transition: all 0.5s;
     }
+
     img {
       border-radius: 10px;
     }
+
     a:hover {
       transform: scale(1.1);
     }
+
     a:active {
       transform: scale(0.9);
     }
+
     .texto_servico {
       color: rgb(168, 168, 0);
       width: 100%;
@@ -399,6 +434,7 @@ header {
       /* margin-left: 4rem; */
       font-size: 20px;
     }
+
     .definicao {
       /* padding: 2rem; */
       /* text-wrap: nowrap; */
@@ -410,19 +446,61 @@ header {
     gap: 6rem;
   }
 
-  .text1,
-  .text2 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: yellow;
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .sobre-link .text2 {
-    text-decoration: underline;
-  }
-
   .creditos {
     display: none;
   }
+}
+
+@media (max-width: 695px) {
+
+  body {
+    max-width: 100%;
+  }
+
+  .cabecalho_46garage {
+    max-width: 100%;
+    max-height: 60px;
+  }
+
+  .logo_cabecalho {
+    max-width: 70px;
+    max-height: 35px;
+  }
+
+  .li_cabecalho {
+    max-width: 70px;
+    max-height: 35px;
+  }
+
+  .fundo {
+    display: flex;
+    max-width: 100%;
+    height: 1900px;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .conteiner_form {
+    margin-left: -5%;
+  }
+
+  .form-container {
+    margin-right: 0%;
+  }
+
+  .footer_46garage {
+    max-width: 100%;
+  }
+
+  .conteiner_footer {
+    max-width: 100%;
+    max-height: 500px;
+    gap: 1.5rem;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 14px;
+  }
+
 }
