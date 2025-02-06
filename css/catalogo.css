@@ -7,6 +7,7 @@ body {
 /*  */
 
 .cabecalho_46garage {
+  user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +20,11 @@ body {
     width: 150px;
     height: 75px;
     cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .logo_cabecalho:hover {
+    filter: drop-shadow(0 0 10px yellow);
   }
 
   .ul_cabecalho {
@@ -52,6 +58,7 @@ body {
   .li_cabecalho:hover {
     color: orange;
     border: solid 1px orange;
+    box-shadow: 0 0 10px yellow;
   }
 }
 
@@ -121,10 +128,11 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s;
   }
 
   .botao_comprar:hover {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 3px yellow;
   }
 }
@@ -135,21 +143,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 100%;
   height: 80px;
   box-shadow: 10px 0 15px yellow;
   background-color: black;
 
   .conteiner_footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .conteiner_footer2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -164,28 +163,35 @@ body {
   }
 
   .text1,
+  .text2,
   .sobre-link {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: yellow;
     text-align: center;
   }
 
-  .text2 {
+  .link_insta,
+  .insta_logo {
     margin: 0;
     padding: 0;
+  }
+
+  .insta_logo {
+    width: 12%;
+    height: 12%;
+    cursor: pointer;
+  }
+
+  .link_insta {
+    display: inline-block;
+    width: 12%;
+    height: 12%;
+  }
+
+  .sobre {
+    text-decoration: underline;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: yellow;
-    text-decoration: underline;
-    text-align: center;
-  }
-
-  .text2:hover {
-    color: orange;
-  }
-
-  .sobre-link {
-    text-decoration: none;
-    display: inline-block;
   }
 
   .creditos {
@@ -195,17 +201,17 @@ body {
     color: white;
     text-align: center;
     cursor: pointer;
-
   }
 
   .creditos:hover {
-    color: orange;
+    color: rgb(255, 208, 0);
   }
 
   .links {
     text-decoration: none;
     display: inline-block;
   }
+
 }
 
 /*  */
@@ -261,28 +267,27 @@ body {
     color: black;
   }
 
+  .footer_46garage {
+    max-width: 100%;
+  }
+
   .conteiner_footer {
     gap: 6rem;
   }
 
   .text1,
   .text2 {
+    margin: 0;
+    padding: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: yellow;
     text-align: center;
     max-width: 100%;
   }
 
-  .sobre-link .text2 {
-    text-decoration: underline;
-  }
-
   .creditos {
     display: none;
   }
-  /* .conteiner_footer2 {
-    display: none;
-  } */
 }
 
 @media (max-width: 597px) {
