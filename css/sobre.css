@@ -6,7 +6,7 @@ body {
 
 /*  */
 
-header {
+.cabecalho_46garage {
   user-select: none;
   display: flex;
   justify-content: center;
@@ -15,78 +15,52 @@ header {
   height: 100px;
   border-radius: 10px;
   box-shadow: 0 5px 30px yellow;
-  gap: 2rem;
 
-  .cabecalho_46garage {
-    display: flex;
-    justify-content: flex-end;
-
-    .logo_cabecalho {
-      width: 150px;
-      height: 75px;
-      cursor: pointer;
-      transition: all 0.5s;
-    }
-
-    .logo_cabecalho:hover {
-      filter: drop-shadow(0 0 10px yellow);
-    }
-
-    .ul_cabecalho {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      gap: 2rem;
-    }
-
-    .li_cabecalho {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: yellow;
-      background-color: black;
-      width: 100px;
-      height: 30px;
-      cursor: pointer;
-      border: solid 1px yellow;
-      transition: all 0.2s;
-      border-radius: 10px;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
-
-    .links {
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .li_cabecalho:hover {
-      color: orange;
-      border: solid 1px orange;
-      box-shadow: 0 0 10px yellow;
-    }
+  .logo_cabecalho {
+    width: 150px;
+    height: 75px;
+    cursor: pointer;
+    transition: all 0.5s;
   }
 
-  /* .cabecalho_46garage2 {
+  .logo_cabecalho:hover {
+    filter: drop-shadow(0 0 10px yellow);
+  }
+
+  .ul_cabecalho {
     display: flex;
-    justify-content: flex-end;
-    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 2rem;
+  }
 
-    p {
-      color: white;
-    }
+  .li_cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: solid 1px yellow;
+    transition: all 0.2s;
+    border-radius: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 
-    img {
-      filter: sepia(100%) hue-rotate(20deg) saturate(300%);
-      width: 8%;
-      height: auto;
-    }
+  .links {
+    text-decoration: none;
+    display: inline-block;
+  }
 
-    img:hover {
-      transform: scale(1.1);
-    }
-  } */
-} 
+  .li_cabecalho:hover {
+    color: orange;
+    border: solid 1px orange;
+    box-shadow: 0 0 10px yellow;
+  }
+}
 
 /*  */
 
